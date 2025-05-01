@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100%;
+    background-color: #EEEDE6;
+    font-family: "Cormorant Garamond";
+  }
+
+  body.dark {
+    background-color: #302F2C;
+  }
+  
+  /* Top Bar */
+  .top-bar {
+    background-color: #B43232;
+    color: #EEEDE6;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    font-family: "Libre Baskerville", serif;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    height: 700px;
+    background: url('images/heroimg.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Menu Links */
+  .menu-links {
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  header a {
+    color: #EEEDE6;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+  }
+  
+  header a:hover {
+    color: #b0abab;
+  }
+  
+  .hero-center {
+    text-align: center;
+    color: #EEEDE6;
+  }
+  
+  .hero-logo {
+    width: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-center h1 {
+    font-size: 3rem;
+    font-family: "Libre Baskerville", serif;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-center p {
+    font-size: 1.2rem;
+  }
+  
+  .sun-button svg {
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+    stroke: #EEEDE6;
+  }
+  
+  .sun-button button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Website information section */
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+    font-family: "Libre Baskerville", serif;
+  }
+
+  nav svg {
+    stroke: #B43232;
+  }
+
+  body.dark svg {
+    stroke: #EEEDE6;
+  }
+
+  body.dark .search-bar input {
+    border-bottom: 1px solid #EEEDE6;
+    color: #EEEDE6;
+  }
+
+  .search-bar input {
+    border: none;
+    border-bottom: 1px solid #CCCCCC;
+    background: transparent;
+    padding: 0.3rem;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  .nav-icons img {
+    width: 24px;
+    height: 24px;
+    margin-left: 1.5rem;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    gap: 3rem;
+  }
+  
+  .text-content {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .text-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-size: 1rem;
+    font-family: "Libre Baskerville", serif;
+  }
+
+  body.dark .text-content {
+    color: #EEEDE6;
+  }
+  
+  .image-content img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+
+/* Product display */
+
+  .product-highlight {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .product-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .product-button {
+    border: 1px solid #B43232;
+    background-color: transparent;
+    color: #B43232;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: "Libre Baskerville", serif;
+    transition: all 0.3s ease;
+  }
+
+  body.dark .product-button {
+    border: 1px solid #EEEDE6;
+    color: #EEEDE6;
+  }
+
+  body.dark .product-button:hover {
+    background-color: #EEEDE6;
+    color: #B43232;
+  }
+  
+  .product-button:hover {
+    background-color: #B43232;
+    color: #EEEDE6;
+  }
+  
+  .product-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .product-text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    max-width: 80%;
+  }
+  
+  .product-text-overlay h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: "Libre Baskerville", serif;
+  }
+  
+  .product-text-overlay p {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: "Libre Baskerville", serif;
+  }
+
+  /* Newsletter section */
+
+  .newsletter-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #302F2C;
+    color: #EEEDE6;
+    padding: 50px;
+    width: 100%;
+    font-family: "Libre Baskerville", serif;
+  }
+  
+  #subscribeForm {
+    flex: 1;
+    margin-right: 40px;
+    max-width: 600px;
+  }
+  
+  #subscribeForm h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  #subscribeForm form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+  }
+  
+  #subscribeForm label, 
+  #subscribeForm p {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  #subscribeForm input,
+  #subscribeForm textarea {
+    background-color: #EEEDE6;
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .contact-method {
+    display: flex;
+    gap: 20px;
+    border: none;
+  }
+  
+  .contact-method label {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  
+  .submit-button {
+    background-color: transparent;
+    border: 1px solid #EEEDE6;
+    border-radius: 100px;
+    color: #EEEDE6;
+    padding: 10px 30px;
+    font-family: "Libre Baskerville", serif;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #EEEDE6;
+    color: #302F2C;
+  }
+
+  .error {
+    color: red;
+    font-size: 0.9rem;
+  }
+  .hidden {
+    display: none;
+  }
+  #submissionMessage {
+    margin-top: 30px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #B43232;
+  }
+  
+  .newsletter-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .newsletter-image img {
+    max-width: 60%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* Guess section */
+
+  .guess-section {
+    width: 100%;
+    background-color: #B43232;
+    color: #EEEDE6;
+    padding: 40px 20px;
+  }
+  
+  .guess-perfume-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .guess-perfume-content h2 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .input-container {
+    margin-top: 10px;
+  }
+  
+  .input-container input {
+    width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: "Libre Baskerville", serif;
+    border: none;
+    background-color: #EEEDE6;
+  }
+
+  .guess-section button {
+    background-color: transparent;
+    border: 1px solid #EEEDE6;
+    border-radius: 100px;
+    color: #EEEDE6;
+    padding: 10px 30px;
+    font-family: "Libre Baskerville", serif;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .guess-section button:hover {
+    background-color: #EEEDE6;
+    color: #302F2C;
+  }
+  
+  .guess-perfume-content p {
+    font-family: "Libre Baskerville", serif;
+    margin: 0;
+    font-size: 1rem;
+  }
